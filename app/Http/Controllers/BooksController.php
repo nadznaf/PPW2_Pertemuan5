@@ -19,8 +19,6 @@ class BooksController extends Controller
     }
 
     public function store(Request $request){
-
-        
         $buku = new Buku();
         $buku->judul = $request->input('judul');
         $buku->penulis = $request->input('penulis');
